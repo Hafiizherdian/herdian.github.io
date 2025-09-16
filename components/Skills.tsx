@@ -77,7 +77,7 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-20 bg-gray-50 dark:bg-black">
+    <section id="skills" className="py-20 bg-gray-100 dark:bg-black">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Kemampuan Utama</h2>
@@ -89,7 +89,7 @@ const Skills = () => {
         
         <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {skills.map((skillGroup, index) => (
-            <div key={index} className="border border-gray-200 dark:border-gray-800 rounded-lg p-6 hover:shadow-md dark:hover:shadow-cyan-500/10 transition-shadow bg-white dark:bg-gray-900/50">
+            <div key={index} className="border border-gray-200 dark:border-gray-800 rounded-lg p-6 hover:shadow-md dark:hover:shadow-cyan-500/10 transition-shadow bg-gray-50 dark:bg-gray-900/50">
               <div className="p-6">
                 <div className="flex items-center mb-4">
                   <div className="p-3 rounded-lg bg-opacity-10 dark:bg-opacity-20 mr-4" style={{ backgroundColor: skillGroup.icon.props.className.includes('blue') ? 'rgba(37, 99, 235, 0.1)' : skillGroup.icon.props.className.includes('purple') ? 'rgba(168, 85, 247, 0.1)' : skillGroup.icon.props.className.includes('green') ? 'rgba(16, 185, 129, 0.1)' : 'rgba(234, 179, 8, 0.1)' }}>

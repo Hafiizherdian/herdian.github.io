@@ -44,7 +44,7 @@ const Education = () => {
   };
 
   return (
-    <section id="education" className="py-20 bg-white dark:bg-black transition-colors duration-300">
+    <section id="education" className="py-20 bg-gray-100 dark:bg-black transition-colors duration-300">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -76,7 +76,7 @@ const Education = () => {
                 variants={item}
                 className="relative"
               >
-                <div className="border border-gray-200 dark:border-gray-800 rounded-lg p-6 hover:shadow-md dark:hover:shadow-cyan-500/10 transition-shadow bg-white dark:bg-gray-900/50">
+                <div className="border border-gray-200 dark:border-gray-800 rounded-lg p-6 hover:shadow-md dark:hover:shadow-cyan-500/10 transition-shadow bg-gray-50 dark:bg-gray-900/50">
                   <div className="flex items-start">
                     <div className="bg-cyan-100 dark:bg-cyan-900/30 p-3 rounded-lg mr-4 flex-shrink-0 shadow-inner">
                       <FaUniversity className="text-cyan-600 dark:text-cyan-400 text-xl" />

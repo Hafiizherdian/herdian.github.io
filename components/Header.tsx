@@ -120,7 +120,7 @@ const Header = () => {
                 {activeSection === link.section && (
                   <motion.span 
                     layoutId="activeNav"
-                    className="absolute bottom-0 left-0 w-full h-0.5 bg-cyan-400"
+                    className="absolute bottom-0 left-0 w-full h-0.5 bg-cyan-500"
                     transition={{ type: 'spring', bounce: 0.2, duration: 0.6 }}
                   />
                 )}

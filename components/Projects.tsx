@@ -55,7 +55,7 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 bg-white dark:bg-black">
+    <section id="projects" className="py-20 bg-gray-100 dark:bg-black">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Proyek Terbaru</h2>
@@ -68,7 +68,7 @@ const Projects = () => {
         <div className="max-w-6xl mx-auto mt-16">
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-2">
             {projects.map((project, index) => (
-              <div key={index} className="border border-gray-200 dark:border-gray-800 rounded-lg p-6 hover:shadow-md dark:hover:shadow-cyan-500/10 transition-shadow bg-white dark:bg-gray-900/50">
+              <div key={index} className="border border-gray-200 dark:border-gray-800 rounded-lg p-6 hover:shadow-md dark:hover:shadow-cyan-500/10 transition-shadow bg-gray-50 dark:bg-gray-900/50">
                 <div className="p-6">
                   <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">{project.name}</h3>
                   <p className="text-gray-600 dark:text-gray-300 mb-4">{project.description}</p>

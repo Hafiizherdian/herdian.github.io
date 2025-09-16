@@ -19,7 +19,8 @@ const experienceData = {
       company: "Telkom Indonesia",
       location: "Bandung, Indonesia",
       responsibilities: [
-        "Sebagai asisten lab membangun pipeline pada pengembangan model machine learning untuk mengevaluasi kualitas data."
+        "Mengembangkan model machine learning untuk mengevaluasi kualitas data.",
+        "Membangun pipeline pada pengembangan model machine learning untuk mengevaluasi kualitas data."
       ]
     }
   ],
@@ -38,7 +39,7 @@ const experienceData = {
     },
     {
       name: "EPrT (English Proficiency Test) 2025",
-      issuer: "EPrT",
+      issuer: "Telkom University Language Center",
       period: "2025",
       credentialId: "520 (Listening 56, Grammar 50, Reading 50)"
     }
@@ -47,7 +48,7 @@ const experienceData = {
 
 const Experience = () => {
   return (
-    <section id="experience" className="py-20 bg-white dark:bg-black">
+    <section id="experience" className="py-20 bg-gray-100 dark:bg-black">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Pengalaman & Sertifikasi</h2>
@@ -85,7 +86,7 @@ const Experience = () => {
               <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-8">Sertifikasi</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {experienceData.certifications.map((cert, index) => (
-                  <div key={index} className="border border-gray-200 dark:border-gray-800 rounded-lg p-6 hover:shadow-md dark:hover:shadow-cyan-500/10 transition-shadow bg-white dark:bg-gray-900/50">
+                  <div key={index} className="border border-gray-200 dark:border-gray-800 rounded-lg p-6 hover:shadow-md dark:hover:shadow-cyan-500/10 transition-shadow bg-gray-50 dark:bg-gray-900/50">
                     <h4 className="text-lg font-semibold text-gray-800 dark:text-gray-100">{cert.name}</h4>
                     <p className="text-sm text-gray-600 dark:text-gray-400 mt-2">{cert.issuer} • {cert.period}</p>
                     {cert.credentialId && (
