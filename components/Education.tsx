@@ -17,7 +17,7 @@ const Education = () => {
         "Pengembangan perangkat lunak",
         "Menyelesaikan proyek akhir berbasis web app microservices dengan predikat sangat memuaskan"
       ],
-      // gpa: "3.00/4.0"
+      gpa: "3.00/4.0"
     },
     
   ];
@@ -106,13 +106,13 @@ const Education = () => {
                         {edu.description}
                       </p>
                       
-                      {/* {edu.gpa && (
+                      {edu.gpa && (
                         <div className="mb-4">
                           <span className="inline-block bg-cyan-100 dark:bg-cyan-900/30 text-cyan-700 dark:text-cyan-300 text-sm px-3 py-1 rounded-full shadow-sm">
                             IPK: {edu.gpa}
                           </span>
                         </div>
-                      )} */}
+                      )}
                       
                       {edu.achievements && edu.achievements.length > 0 && (
                         <div className="mt-4 pt-4 border-t border-gray-200 dark:border-gray-800">
