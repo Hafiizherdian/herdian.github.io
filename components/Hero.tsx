@@ -16,7 +16,7 @@ const Hero = () => {
             Hafiizh Herdian
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-700 dark:text-gray-300">
-            Fresh graduate S1 Sistem Informasi Telkom University dengan dasar analisis data, pengembangan aplikasi, dan manajemen proyek.
+            Lulusan S1 Sistem Informasi Telkom University dengan fokus pada analisis data, pengembangan web, dan implementasi teknologi AI (Generative AI & Big Data).
           </p>
           <div className="flex flex-wrap items-center justify-center mt-10 gap-4">
             {/* <a
