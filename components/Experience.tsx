@@ -121,7 +121,7 @@ const Experience = () => {
                     </p>
                     {cert.credentialId && (
                       <p className="text-xs text-gray-500 dark:text-gray-400 mt-2">
-                        ID: {cert.credentialId}
+                        Score: {cert.credentialId}
                       </p>
                     )}
                   </div>
