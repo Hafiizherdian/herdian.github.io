@@ -29,7 +29,7 @@ const Projects = () => {
         "Menyusun dokumentasi teknis lengkap (ERD, BRD, class diagram) sebagai bagian dari deliverable proyek."
       ],
       techStack: ["Node.js", "Next.js", "TypeScript", "PostgreSQL", "Docker", "Generative AI (LLM)", "Microservices Architecture"],
-      image: "https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp",
+      video: "https://www.youtube.com/embed/Y2YqQ2c14RA", 
       links: {
         github: "https://github.com/Hafiizherdian",
         demo: "#"
@@ -46,7 +46,7 @@ const Projects = () => {
         "Mengidentifikasi pola dan insight bisnis dari data penjualan."
       ],
       techStack: ["Google Data Studio", "SQL", "Google Cloud Platform", "Data Visualization"],
-      video: "https://www.youtube.com/watch?v=83RUhxsfLWs", // contoh link YouTube
+      image: "https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp", // contoh link YouTube
       links: {
         github: "",
         demo: ""
