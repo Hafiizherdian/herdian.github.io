@@ -48,26 +48,36 @@ const experienceData = {
 
 const Experience = () => {
   return (
-    <section id="experience" className="py-20 bg-gray-100 dark:bg-black">
+    <section
+      id="experience"
+      className="py-20 bg-gray-100 
+                 dark:bg-gradient-to-b dark:from-black dark:via-gray-950 dark:to-black"
+    >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Pengalaman & Sertifikasi</h2>
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
+            Pengalaman & Sertifikasi
+          </h2>
           <div className="w-16 h-1 bg-cyan-500 mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
             Pengalaman kerja dan sertifikasi yang telah saya peroleh selama ini.
           </p>
         </div>
-        
+
         <div className="max-w-5xl mx-auto mt-16">
           <div className="space-y-20">
             {/* Pengalaman Kerja */}
             <div className="mb-12">
-              <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-8">Pengalaman Kerja</h3>
+              <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-8">
+                Pengalaman Kerja
+              </h3>
               <div className="space-y-8">
                 {experienceData.workExperience.map((exp, index) => (
                   <div key={index} className="relative pl-8 border-l-2 border-cyan-500">
                     <div className="absolute w-4 h-4 bg-cyan-500 rounded-full -left-2 top-1"></div>
-                    <h4 className="text-lg font-semibold text-gray-800 dark:text-gray-100">{exp.position}</h4>
+                    <h4 className="text-lg font-semibold text-gray-800 dark:text-gray-100">
+                      {exp.position}
+                    </h4>
                     <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
                       {exp.company} • {exp.period} • {exp.location}
                     </p>
@@ -83,19 +93,42 @@ const Experience = () => {
 
             {/* Pelatihan & Sertifikasi */}
             <div>
-              <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-8">Sertifikasi</h3>
+              <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-8">
+                Sertifikasi
+              </h3>
+
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {experienceData.certifications.map((cert, index) => (
-                  <div key={index} className="border border-gray-200 dark:border-gray-800 rounded-lg p-6 hover:shadow-md dark:hover:shadow-cyan-500/10 transition-shadow bg-gray-50 dark:bg-gray-900/50">
-                    <h4 className="text-lg font-semibold text-gray-800 dark:text-gray-100">{cert.name}</h4>
-                    <p className="text-sm text-gray-600 dark:text-gray-400 mt-2">{cert.issuer} • {cert.period}</p>
+                  <div
+                    key={index}
+                    className="relative rounded-2xl border border-gray-700/50 
+                               bg-white/10 backdrop-blur-md p-6 text-center 
+                               shadow-sm hover:shadow-[0_0_25px_rgba(56,189,248,0.3)] 
+                               transition-all duration-300"
+                  >
+                    {/* Garis solid */}
+                    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-20 h-[3px] bg-cyan-400 rounded-full" />
+
+                    {/* Glow di belakang garis */}
+                    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-28 h-[8px] bg-cyan-400 blur-md opacity-70" />
+
+                    {/* Konten */}
+                    <h4 className="text-lg font-semibold text-gray-800 dark:text-gray-100 mt-3">
+                      {cert.name}
+                    </h4>
+                    <p className="text-sm text-gray-600 dark:text-gray-400 mt-2">
+                      {cert.issuer} • {cert.period}
+                    </p>
                     {cert.credentialId && (
-                      <p className="text-xs text-gray-500 dark:text-gray-400 mt-2">ID: {cert.credentialId}</p>
+                      <p className="text-xs text-gray-500 dark:text-gray-400 mt-2">
+                        ID: {cert.credentialId}
+                      </p>
                     )}
                   </div>
                 ))}
               </div>
             </div>
+
           </div>
         </div>
       </div>
